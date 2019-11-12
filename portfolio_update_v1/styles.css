@@ -69,12 +69,14 @@ header {
 }
 
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 40px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid black;
   transition: all .3s;
+  object-fit: cover;
+  object-position: top;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(365deg);
@@ -90,12 +92,12 @@ header .profile-image:hover {
 } 
 .location {
   background-color: #222;
-  color: yellow;
+  color: #efefef;
 }
 .info-box {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px 40px 40px 40px;
+  max-width: 480px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -126,13 +128,16 @@ ul.skills {
 
 footer {
   width: 100%;
-  min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding: 15px 0 15px 20px;
+  background: #000000;
+  max-width: 100%;
+
 }
 
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  color: #efefef;
 }
 
 footer ul {
@@ -178,10 +183,10 @@ a.social:hover {
 }
 .interests-title {
   background-color: rgb(239,239,239, 0.8);
-  padding: 10px;
+  padding: 10px 150px;
   border-radius: 5px;
   display: table;
-  margin: 20px auto;
+  margin: 100px auto;
 }
 
 .interest-pic {
@@ -191,14 +196,14 @@ a.social:hover {
 
 /* Styles for larger screens */
 
-@media screen and (min-width: 560px){
+/* @media screen and (min-width: 560px){
   .main-interests{
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-content: center;
     width: 100%;
   }
-}
+} */
 
 @media screen and (min-width: 720px) {
   
@@ -222,26 +227,29 @@ a.social:hover {
 
   main {
     padding-top: 20px;
+    
   }
 
   main p {
     line-height: 1.6em;
   }
-
   footer {
     font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
+    margin: 20px auto 0px auto;
   }
 
   .main-interests{
     display: flex;
     flex-direction: row;
-    align-content: flex-start;
+    justify-content: space-between;
     width: 100%;
   }
   .hobbies-image {
     max-width: 85%;
+  }
+
+  .info-box {
+    margin: 30px 20px;
   }
 
 }
