@@ -92,7 +92,7 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
-.card {
+.info-box {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -102,7 +102,7 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
+.info-box:hover {
   border-color: #aad0e3;
 }
 
@@ -176,7 +176,7 @@ a.social:hover {
 .hobbies-image {
   width: 50%;
 }
-.interests-label {
+.interests-title {
   background-color: rgb(239,239,239, 0.8);
   padding: 10px;
   border-radius: 5px;
