@@ -249,8 +249,8 @@ a.social:hover {
 
   .main-interests{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
   }
 
@@ -260,6 +260,18 @@ a.social:hover {
 
   .info-box {
     margin: 30px 20px;
+    flex-basis: 40%;
   }
+}
+@media screen and (min-width: 1024px){
+
+  .info-box {
+    flex-basis: 30%;
+  }
+
+  .home {
+    flex-basis: 50%;
+  }
+
 }
 
