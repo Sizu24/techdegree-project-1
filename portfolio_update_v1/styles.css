@@ -210,7 +210,7 @@ a.social:hover {
   padding: 10px 150px;
   border-radius: 5px;
   display: table;
-  margin: 100px auto;
+  margin: 100px auto 40px auto;
 }
 
 .interest-pic {
@@ -231,6 +231,11 @@ h2 {
 .travel-pic {
   max-width: 100%;
   margin-bottom: 10px;
+}
+
+.travel-header .tag {
+  background-color: #222;
+  color: #efefef;
 }
 
 /* Styles for larger screens */
