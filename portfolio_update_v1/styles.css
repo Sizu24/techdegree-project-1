@@ -105,6 +105,12 @@ header .profile-image:hover {
   color: #efefef;
 }
 
+.box-title {
+  font-size: 2.0em;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
 .info-box {
   margin: 30px auto;
   padding: 20px 40px 40px 40px;
@@ -114,6 +120,7 @@ header .profile-image:hover {
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+  flex-basis: 90%;
 }
 
 .info-box:hover {
@@ -192,13 +199,13 @@ a.social:hover {
   clear: both;
 }
 
-/*interests styles*/
+/* Interests Styles */
 
 .hobbies-image {
   width: 50%;
 }
 
-.interests-title {
+.title {
   background-color: rgb(239,239,239, 0.8);
   padding: 10px 150px;
   border-radius: 5px;
@@ -207,6 +214,21 @@ a.social:hover {
 }
 
 .interest-pic {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Travel styles */
+h2 {
+  font-family: "Times New Roman";
+}
+
+.travel-header {
+  background: url("images/city.jpeg") no-repeat top;
+  background-size: cover;
+}
+
+.travel-pic {
   max-width: 100%;
   margin-bottom: 10px;
 }
@@ -262,6 +284,11 @@ a.social:hover {
     margin: 30px 20px;
     flex-basis: 40%;
     /* changes box sizes to show 2 boxes on first line */
+  }
+
+  .travel {
+    margin: 30px auto;
+    max-width: 700px;
   }
 
 }
